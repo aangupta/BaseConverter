@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaseConverter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fliud">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">Utility Application <i class="fa fa-wrench" aria-hidden="true"></i></a>
+            </div>
+            <ul class ="nav navbar-nav">
+                <li class><a href="index.html">My Public IP Address</a></li>
+                <li><a href="timer.html">Timer</a></li>
+                <li><a href="stopwatch.html">Stopwatch</a></li>
+                <li><a href="languageTranslator.html">Language Translator</a></li>
+                <li class="dropdown">
+                    <a href="https://utilityapp1.netlify.app/" class="dropdown-toggle" data-toggle="dropdown">Encoder/Decoder<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://utilityapp1.netlify.app/" target="blank">URL Encoder/Decoder</a></li>
+                        <li><a href="https://utilityapp1.netlify.app/base64encode.html" target="blank">Base64 Encoder</a></li>
+                        <li><a href="https://utilityapp1.netlify.app/base64decode.html" target="blank">Base64 Decoder</a></li>
+                        <li><a href="https://utilityapp1.netlify.app/md5hash.html" target="blank">MD5 HashGenerator</a></li>
+                        <li><a href="https://utilityapp1.netlify.app/sha-1.html" target="blank">SHA-1 HashGenerator</a></li>
+                        <li><a href="https://utilityapp1.netlify.app/sha-256.html" target="blank">SHA-256 HashGenerator</a></li>
+                        <li><a href="https://utilityapp1.netlify.app/sha-512.html"target="blank">SHA-512 HashGenerator</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Color Conversion<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="https://rgbhexutilityapp.netlify.app/" target="blank">RGB To Hex</a></li>
+                      <li><a href="https://rgbhexutilityapp.netlify.app/hextorgb.html" target="blank">Hex To RGB</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://epochtimeconverter.netlify.app/" target="blank">Epoch Converter</a></li>
+
+                <li><a href="https://stringutilityapp.netlify.app/" target="blank">String Utility</a></li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Unit Converter<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="https://unitconvertertool.netlify.app/" target="blank">Length</a></li>
+                      <li><a href="https://unitconvertertool.netlify.app/temperature.html" target="blank">Temperature</a></li>
+                      <li><a href="https://unitconvertertool.netlify.app/weight.html" target="blank">Weight</a></li>
+                      <li><a href="https://unitconvertertool.netlify.app/time.html" target="blank">Time</a></li>
+                    </ul>
+                </li>
+                <li class ="active"><a href="index.html" target="blank">Base Converter</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div>
+            <h2 style="margin: 4rem; font-size: 4rem;">Base Converter</h2>
+        </div>
+
+        <div class="container-content">
+            <div class="container-content-left">
+                <div class="form-group" style="display: flex; flex-direction: column;">
+                    <label for="input">Enter the number</label>
+                    <input type ="text" id="input">
+                </div>
+        
+                <div class="form-group" style="display: flex; flex-direction: column;">
+                    <label for="inputType">From Base</label>
+        
+                    <select name="inputType" id="inputType" style="font-size: medium;">
+                        <option value="binary">Binary</option>
+                        <option value="octal">Octal</option>
+                        <option value="decimal">Decimal</option>
+                        <option value="hex">Hex</option>
+                    </select>
+                   
+                </div>
+            </div>
+
+            <div class="container-content-right">
+                <div class="form-group" style="display: flex; flex-direction: column;">
+                    <label for="output">Result</label>
+                    <input type ="text" id="output" value="">
+                </div>
+                <div class="form-group" style="display: flex; flex-direction: column;">
+                    <label for="resultType">To Base</label>
+        
+                    <select name="resultType" id="resultType" style="font-size: medium;">
+                        <option value="binary">Binary</option>
+                        <option value="octal">Octal</option>
+                        <option value="decimal">Decimal</option>
+                        <option value="hex">Hex</option>
+                    </select>
+                   
+                </div>
+            </div>
+
+           
+        </div>
+
+        <div class="form-group" style="display: flex; flex-direction: row;">
+            <input type ="button" value="Convert" id="convert" style ="width: 120px; text-align: center;">
+            <input type ="button" value="Clear" id="clear" style ="width: 120px; text-align: center;">
+        </div>
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

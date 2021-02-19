@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f0f0f0;
+  font-family: 'Crimson Text', serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-left: 1rem;
+}
+
+input[type=number],
+select {
+  padding: 0.5rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  width: 320px;
+  height: 50px;
+  margin: 1rem;
+}
+
+input[type=button],
+select {
+  padding: 0.5rem;
+  display: inline-block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background: #d3d3d3;
+  text-decoration: solid;
+  text-align: center;
+  color: black;
+  margin: 2rem;
+  width: 320px;
+  height: 34px;
+  font-size: medium;
+}
+
+input[type=text],
+select {
+  padding: 0.5rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 1rem;
+  height: 50px;
+  font-size: 2rem;
+}
+
+.timer-box input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  justify-content: space-between;
+}
+
+.container-content-left {
+  margin: 2rem;
+}
+
+.container-content-right {
+  margin: 2rem;
+}
+
+label {
+  font-size: 2rem;
+}
