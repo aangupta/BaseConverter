@@ -54,7 +54,7 @@ body {
   font-family: var(--ff-body);
   font-weight: 400;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -92,9 +92,6 @@ header {
   width: 80%;
   margin: 0 auto;
   background-color: white;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-top: 1rem;
 }
 
 .container h3 {
@@ -351,3 +348,4 @@ select {
     width: 60%;
   }
 }
+
