@@ -12,109 +12,88 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-    <nav class="navbar navbar-default">
-        <div class="container-fliud">
-            <div class="navbar-header">
-                <a href="index.html" class="navbar-brand">Utility Application <i class="fa fa-wrench" aria-hidden="true"></i></a>
-            </div>
-            <ul class ="nav navbar-nav">
-                <li><a href="https://utilityappmain.netlify.app/index.html" target="blank" >My Public IP Address</a></li>
-                <li><a href="https://utilityappmain.netlify.app/timer.html" target="blank">Timer</a></li>
-                <li><a href="https://utilityappmain.netlify.app/stopwatch.html" target="blank">Stopwatch</a></li>
-                <li><a href="https://utilityappmain.netlify.app/languagetranslator" target="blank">Language Translator</a></li>
-                <li class="dropdown">
-                    <a href="https://utilityapp1.netlify.app/" class="dropdown-toggle" data-toggle="dropdown">Encoder/Decoder<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://utilityapp1.netlify.app/" target="blank">URL Encoder/Decoder</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/base64encode.html" target="blank">Base64 Encoder</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/base64decode.html" target="blank">Base64 Decoder</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/md5hash.html" target="blank">MD5 HashGenerator</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/sha-1.html" target="blank">SHA-1 HashGenerator</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/sha-256.html" target="blank">SHA-256 HashGenerator</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/sha-512.html"target="blank">SHA-512 HashGenerator</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Color Conversion<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="https://rgbhexutilityapp.netlify.app/" target="blank">RGB To Hex</a></li>
-                      <li><a href="https://rgbhexutilityapp.netlify.app/hextorgb.html" target="blank">Hex To RGB</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://epochtimeconverter.netlify.app/" target="blank">Epoch Converter</a></li>
-
-                <li><a href="https://stringutilityapp.netlify.app/" target="blank">String Utility</a></li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Unit Converter<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="https://unitconvertertool.netlify.app/" target="blank">Length</a></li>
-                      <li><a href="https://unitconvertertool.netlify.app/temperature.html" target="blank">Temperature</a></li>
-                      <li><a href="https://unitconvertertool.netlify.app/weight.html" target="blank">Weight</a></li>
-                      <li><a href="https://unitconvertertool.netlify.app/time.html" target="blank">Time</a></li>
-                    </ul>
-                </li>
-                <li class ="active"><a href="index.html" target="blank">Base Converter</a></li>
-
-            </ul>
+    <header>
+        <div class="hd-text">
+            <a style = "text-decoration: none;" href= "index.html" class = "title" > <h2>Base Converter</h2></a>
         </div>
-    </nav>
+        <div class="home">
+            <a style = "text-decoration: none;" href= "https://utilityappmain.netlify.app/index.html" class = "title" target="_blank" > <h2>Home</h2></a>
+        </div>
+            
+     </header>
 
     <div class="container">
-        <div>
-            <h2 style="margin: 4rem; font-size: 4rem;">Base Converter</h2>
+        <h3>Number Base Converter</h3>
+        <h4> Convert numbers from one base to another</h4>
+
+        <div class="form-group">
+            <label for="input" class ='label'>Enter the number</label>
+            <input type ="text" id="input">
         </div>
 
-        <div class="container-content">
-            <div class="container-content-left">
-                <div class="form-group" style="display: flex; flex-direction: column;">
-                    <label for="input">Enter the number</label>
-                    <input type ="text" id="input">
-                </div>
-        
-                <div class="form-group" style="display: flex; flex-direction: column;">
-                    <label for="inputType">From Base</label>
-        
-                    <select name="inputType" id="inputType" style="font-size: medium;">
-                        <option value="binary">Binary</option>
-                        <option value="octal">Octal</option>
-                        <option value="decimal">Decimal</option>
-                        <option value="hex">Hex</option>
-                    </select>
-                   
-                </div>
-            </div>
+        <div class="select-group">
+            <label for="inputType" class ='label'>From Base</label>
 
-            <div class="container-content-right">
-                <div class="form-group" style="display: flex; flex-direction: column;">
-                    <label for="output">Result</label>
-                    <input type ="text" id="output" value="">
-                </div>
-                <div class="form-group" style="display: flex; flex-direction: column;">
-                    <label for="resultType">To Base</label>
-        
-                    <select name="resultType" id="resultType" style="font-size: medium;">
-                        <option value="binary">Binary</option>
-                        <option value="octal">Octal</option>
-                        <option value="decimal">Decimal</option>
-                        <option value="hex">Hex</option>
-                    </select>
-                   
-                </div>
-            </div>
+            <select name="inputType" id="inputType" class ='select'>
+                <option disabled selected>Choose an option</option>
+                <option value="binary">Binary</option>
+                <option value="octal">Octal</option>
+                <option value="decimal">Decimal</option>
+                <option value="hex">Hex</option>
+            </select> 
 
+            
+                
            
         </div>
 
-        <div class="form-group" style="display: flex; flex-direction: row;">
-            <input type ="button" value="Convert" id="convert" style ="width: 120px; text-align: center;">
-            <input type ="button" value="Clear" id="clear" style ="width: 120px; text-align: center;">
+        <div class="select-group">
+            <label for="resultType" class = 'label label1'>To Base</label>
+
+            <select name="resultType" id="resultType" class = 'select'>
+                <option disabled selected>Choose an option</option>
+                <option value="binary">Binary</option>
+                <option value="octal">Octal</option>
+                <option value="decimal">Decimal</option>
+                <option value="hex">Hex</option>
+            </select>
+               
+            
+           
         </div>
+
+        <div class="form-group">
+            <div class='btn-group'>
+                <input type ="button" value="Convert" id="convert" class ='btn' style="margin-left: 15px;">
+                <input type ="button" value="Clear" id="clear" class ='btn' style="margin-left: 15px;">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="output" class ='label'>Result</label>
+            <input type ="text" id="output" value="" readonly>
+        </div>
+
+        
 
 
     </div>
+
+    <footer>
+        <div class="footer-text">
+            <h4>Made with <span class="fa fa-heart"></span> by Aanchal</h4>
+        </div>
+        <div class="footer-icons">
+            <ul>
+                <li> <a href="https://github.com/aangupta"class="fa fa-github"target="_blank"></a></li>
+                <li> <a href="https://www.linkedin.com/in/aanchal-gupta-3ab35bb1/" class="fa fa-linkedin" target="_blank"></a></li>
+                <li><a href="https://twitter.com/aangupta5"class="fa fa-twitter"target="_blank"></a> </li>
+                <li> <a href="mailto: aanchalgupta457@gmail.com" class="fa fa-envelope" target="_blank"></a> </li>
+            </ul>
+            
+        </div>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
