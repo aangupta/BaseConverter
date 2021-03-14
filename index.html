@@ -22,62 +22,56 @@
             
      </header>
 
-    <div class="container">
-        <h3>Number Base Converter</h3>
-        <h4> Convert numbers from one base to another</h4>
-
-        <div class="form-group">
-            <label for="input" class ='label'>Enter the number</label>
-            <input type ="text" id="input">
-        </div>
-
-        <div class="select-group">
-            <label for="inputType" class ='label'>From Base</label>
-
-            <select name="inputType" id="inputType" class ='select'>
-                <option disabled selected>Choose an option</option>
-                <option value="binary">Binary</option>
-                <option value="octal">Octal</option>
-                <option value="decimal">Decimal</option>
-                <option value="hex">Hex</option>
-            </select> 
-
-            
+     <div class="wrapper">
+         <div class="wrapper-left">
+            <h3>Number Base Converter</h3>
+            <h4> Convert numbers from one base to another</h4>
+    
+             <div class="container">
+                <div class="form-group">
+                    <label for="input" class ='label'>Enter the number</label>
+                    <input type ="text" id="input">
+                </div>
                 
-           
-        </div>
+                <select name="inputType" id="inputType" class ='select'>
+                    <option disabled selected>Choose an option</option>
+                    <option value="binary">Binary</option>
+                    <option value="octal">Octal</option>
+                    <option value="decimal">Decimal</option>
+                    <option value="hex">Hex</option>
+                </select> 
 
-        <div class="select-group">
-            <label for="resultType" class = 'label label1'>To Base</label>
+             </div>
 
-            <select name="resultType" id="resultType" class = 'select'>
-                <option disabled selected>Choose an option</option>
-                <option value="binary">Binary</option>
-                <option value="octal">Octal</option>
-                <option value="decimal">Decimal</option>
-                <option value="hex">Hex</option>
-            </select>
-               
-            
-           
-        </div>
+             <div class="form-group">
+                <label for="resultType" class = 'label label1'>To Base</label>
 
-        <div class="form-group">
-            <div class='btn-group'>
-                <input type ="button" value="Convert" id="convert" class ='btn' style="margin-left: 15px;">
-                <input type ="button" value="Clear" id="clear" class ='btn' style="margin-left: 15px;">
+                <select name="resultType" id="resultType" class = 'select'>
+                    <option disabled selected>Choose an option</option>
+                    <option value="binary">Binary</option>
+                    <option value="octal">Octal</option>
+                    <option value="decimal">Decimal</option>
+                    <option value="hex">Hex</option>
+                </select>
+             </div>
+
+             <div class="form">
+                <div class="btn-group">
+                    <input type ="button" value="Convert" id="convert" class ='btn'>
+                    <input type ="button" value="Clear" id="clear" class ='btn'>
+                 </div>
+             </div>
+
+             <div class="form-group">
+                <label for="output" class ='label'>Result</label>
+                <input type ="text" id="output" value="" readonly>
             </div>
-        </div>
-
-        <div class="form-group">
-            <label for="output" class ='label'>Result</label>
-            <input type ="text" id="output" value="" readonly>
-        </div>
-
-        
 
 
-    </div>
+         </div>
+     </div>
+
+
 
     <footer>
         <div class="footer-text">
